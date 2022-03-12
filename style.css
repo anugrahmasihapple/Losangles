@@ -1,0 +1,517 @@
+
+/********
+
+COMMON
+
+***********/
+
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+
+}
+
+
+
+/**********
+
+MAIN
+
+*********/
+
+
+.main {
+    position: relative;
+}
+
+.main img.background  {
+    width: 100%;
+}
+
+.main .header {
+    position: absolute;
+    top: 10px;
+    left: 20%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .header img{
+    width: 40px;
+}
+
+.main .header ul {
+    display: flex;
+}
+
+.main .header  li {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.main .header li a {
+    color: rgb(231, 231, 231);
+    font-style: italic;
+}
+
+/*** this is for three imgs like left and right mountain    ***/
+
+.main .text-losangeles {
+    position: absolute;
+    top: 130px;
+    left: 30%;
+    width: 40%;
+    z-index: 1;
+}
+
+
+/*** for mountain imgs  ****/
+
+.main .mountain-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 53%;
+    z-index: 2;
+}
+
+
+
+.main .mountain-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 53%;
+    z-index: 3;
+}
+
+/*********/
+.mainb .headerb {
+    position: relative;
+    padding-bottom: 130px;
+    margin-bottom: 10px;
+}
+
+.mainb .headerb {
+    position: absolute;
+    margin-top: none;
+    margin: 0;
+    border-color: aliceblue;
+}
+.mainb .headerb {
+    position: absolute;
+    bottom: 0px;
+    left: 20%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainb .headerb img{
+    width: 130px;
+}
+
+.mainb .headerb ul {
+    display: flex;
+}
+
+.mainb .headerb  li {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.mainb .headerb li a {
+    color: darkgray;
+    font-style: italic;
+}
+
+/********************
+* HISTORY 
+*********************/
+
+.history {
+    
+}
+
+
+.history img.background  {
+    width: 100%;
+    margin-top: 48px;
+}
+
+
+.history .background2 {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+  }
+
+
+.history {
+    background: url("img/background-history.png");
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-attachment: inherit;
+    background-size: cover;
+  }
+  
+  .history .background2 {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .history .number1 {
+    font-size: 17px;
+    position: absolute;
+    left: 20%;
+    font: 150px sans-serif;
+    top: 10%;
+    color: #41516b;
+    opacity: 45%;
+  }
+  
+  .history .heading1 {
+    font-size: 30px;
+    position: absolute;
+    left: 32%;
+    top: 18%;
+    color: #41516b;
+  }
+  
+  .history .h1text {
+    font-size: 10px;
+    position: absolute;
+    left: 22%;
+    top: 30%;
+    color: #6d6b6b;
+    line-height: 36px;
+  }
+  
+  .history .pictures {
+    position: absolute;
+    background-color: rgba(57, 69, 93, 0.7);
+    display: flex;
+    justify-content: center;
+    height: 22%;
+    width: 100%;
+    bottom: 0px;
+    z-index: 1;
+  }
+  
+  .history .pictures .menu {
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+  }
+  
+  .history .pictures .photos {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    top: 13%;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  
+  .history .pictures .photos img {
+    padding: 10%;
+    width: 150px;
+    padding-top: 1%;
+  }
+  .history .pictures .photos li {
+    display: inline;
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 400px) {
+    .history .number1 {
+      position: absolute;
+      left: 3%;
+      font: 100px sans-serif;
+      top: 0%;
+      color: rgb(65, 81, 107);
+      opacity: 0.45;
+    }
+  
+    .history .heading1 {
+      font-size: 30px;
+      position: absolute;
+      left: 35%;
+      top: 6%;
+      color: #41516b;
+    }
+  
+    .history .h1text {
+      position: absolute;
+      left: 4%;
+      top: 22%;
+      color: #2e2d2d;
+      line-height: 20px;
+    }
+  
+    .history .pictures .photos {
+      left: 1%;
+      width: 89%;
+    }
+  
+    .history .pictures .photos img {
+      padding: 22%;
+      width: 70px;
+      padding-top: 1%;
+    }
+  
+    .history .pictures {
+      height: 14%;
+    }
+  
+    .history .pictures .menu {
+      left: 48%;
+    }
+  }
+  
+  @media screen and (min-width: 400px) and (max-width: 1200px) {
+    .history .number1 {
+      left: 10%;
+      font: 120px sans-serif;
+    }
+    .history .heading1 {
+      font-size: 30px;
+      left: 25%;
+    }
+  
+    .history .pictures {
+      position: absolute;
+      background-color: rgba(57, 69, 93, 0.7);
+      height: 12%;
+      width: 100%;
+      bottom: 0px;
+      z-index: 1;
+    }
+  
+    .history .pictures .photos {
+      position: absolute;
+      list-style: none;
+      display: flex;
+      text-align: center;
+      top: 0%;
+      width: 50%;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+  
+    .history .pictures .photos img {
+      height: 64px;
+      width: 90%;
+      padding-left: 13%;
+    }
+    .history .h1text {
+      position: absolute;
+      left: 10%;
+      top: 30%;
+      color: #2e2d2d;
+      line-height: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 3000px) and (max-width: 1200px) {
+    .history .pictures .photos img {
+      padding: 10%;
+      width: 16vh;
+      padding-top: 1%;
+      padding-right: 10px;
+    }
+  
+    .history .pictures .photos {
+      left: 10%;
+    }
+  }
+  
+
+  .history .iconmore img {
+      width: 20px;
+      margin-top: 130px;
+      border-color: antiquewhite;
+  }
+/*history ends here */
+
+
+.header3 {
+    position: relative;
+    height: 34vh;
+  }
+  .header3 .number2 {
+    position: absolute;
+    left: 20%;
+    font-size: 150px;
+    bottom: 1%;
+    color: #41516b;
+    opacity: 45%;
+  }
+  
+  .header3 .heading2 {
+    font-size: 50px;
+    position: absolute;
+    left: 34%;
+    top: 50%;
+    color: #41516b;
+  }
+  
+  .header3 .h2text {
+    position: absolute;
+    left: 49%;
+    top: 38%;
+    color: #2e2d2d;
+    line-height: 36px;
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 400px) {
+    .header3 .number2 {
+      left: 3%;
+      font-size: 100px;
+      bottom: 24%;
+    }
+  
+    .header3 .heading2 {
+      font-size: 25px;
+      left: 49%;
+      top: 5%;
+    }
+  
+    .header3 .h2text {
+      left: 50%;
+      top: 27%;
+      line-height: 15px;
+      font-size: 7px;
+      color: gray;
+    }
+  }
+  
+  @media screen and (min-width: 401px) and (max-width: 1200px) {
+    .header3 .number2 {
+      left: 5%;
+      top: 4%;
+      font: 120px sans-serif;
+    }
+  
+    .header3 .heading2 {
+      font-size: 50px;
+      position: absolute;
+      left: 21%;
+      top: 9%;
+      color: #41516b;
+    }
+  
+    .header3 .h2text {
+      position: absolute;
+      left: 23%;
+      top: 38%;
+      color: #2e2d2d;
+      line-height: 22px;
+    }
+  }
+  
+  .climb {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    background: url("img/backsec3.svg");
+    background-size: cover;
+    background-attachment: inherit;
+  }
+  
+  .climb .navbar3 {
+    position: absolute;
+    bottom: 100%;
+    background-color: #414f6a;
+    width: 60%;
+    padding: 0px 20%;
+    display: flex;
+  }
+  
+  .climb .navbar3 .link {
+    padding: 10px 15px;
+    color: #b0b4bf;
+    text-decoration: underline #b0b4bf;
+  }
+  
+  .climb .navbar3 .linkselect {
+    padding: 10px 15px;
+    color: #424e67;
+    background-color: #b0b4bf;
+    text-decoration: underline #424e67;
+  }
+  
+  .climb .box {
+    height: 250px;
+    width: 300px;
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    background-color: rgb(218, 218, 218, 0.5);
+    color: rgb(5, 5, 5, 0.5);
+    text-align: center;
+    padding: 10px;
+  }
+  .climb .box .boxheading {
+    font-size: 40px;
+    padding: 10px;
+    text-align: left;
+    color: #424e67;
+  }
+  .climb td {
+    padding: 10px;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .climb .box {
+      height: 250px;
+      top: 12%;
+      left: 3%;
+      padding: 0px;
+    }
+  }
+  
+  .footer {
+    width: 100%;
+    height: 57px;
+    background-color: #414f6a;
+  }
+  .footer .content {
+    position: relative;
+    top: 15%;
+    width: 60%;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer .content .nav2 li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 11px;
+    color: rgb(97, 113, 147, 100%);
+  }
+  
+  .footer .content img.h2icon {
+    width: 120px;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .footer .content {
+      top: 7%;
+      width: 85%;
+      left: 8%;
+    }
+  
+    .footer .content img.h2icon {
+      width: 66px;
+    }
+  
+    .footer .content .nav2 li {
+      font-size: 8px;
+    }
+  }
+  
